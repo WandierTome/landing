@@ -15,16 +15,22 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 62, 5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: var(--ter-color);
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 a {
@@ -116,11 +122,14 @@ a {
     gap: var(--gap);
     height: 100vh;
 }
-.inicio-text, .inicio-img {
+
+.inicio-text,
+.inicio-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
+
 .inicio-text h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -130,6 +139,27 @@ a {
 .inicio-img {
     max-width: 100%;
     height: auto;
+}
+
+.nos-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid-nos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid-nos h3 {
+    font-size: 1rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
 }
 
 /* Fim do my classes */
